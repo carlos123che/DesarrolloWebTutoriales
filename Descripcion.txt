@@ -1,4 +1,0 @@
-Este repositorio guarda ejemplos y tutoriales de desarrollo web
-Sirve para poder realizar practicas futuras y basarme o utilizar recursos de estos
-
-La estrucutra del repositorio variara y se describira en este documento

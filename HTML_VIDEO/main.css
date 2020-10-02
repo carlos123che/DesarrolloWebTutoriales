@@ -1,0 +1,81 @@
+* { /*El asterisco afecta a todos los elementos*/
+    box-sizing: border-box; /*para que el margen y el padding sean iguales*/
+}
+
+body{
+    margin: 0; /*Le quito los margenes*/
+    font-size: 1rem;
+    line-height: 1.5; /*Interlineado*/
+    color: #333; /*color fondo*/
+    overflow-x: hidden; /*quitarle scroll bar para no pasarnos del margen de pantalla*/
+}
+
+.header{ /* . es para afectar las clases declaradas en HTML*/
+    height: 100vh; /*vh tamaño del dispositivo*/
+    display: flex; /*para poder usar flexbox*/
+    align-items: center; /*para centrar los elementos*/
+    color: #ffffff;
+}
+
+.content{
+    max-width: 40rem;
+    padding-left: 1rem; /*padding es espaciado*/
+    padding-right: 1rem;
+    margin: auto; /*para que el contenido este centrado*/
+    text-align: center; /*texto centrdao*/
+}
+
+.header-video{
+    position: absolute;
+    top: 0;
+    left: 0; /*top0 y left0 es para que este en la esquina superior*/
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /*para quitar las barras*/
+}
+
+.header-video video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303952;
+    z-index: 1;
+    opacity: .85;
+}
+
+.header-content{
+    z-index: 2;
+}
+
+.header-content h1{
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+}
+
+.header-content p{
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem; /*separacion por debajo*/
+}
+
+.btn{
+    background: #c44569;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem; /*1rem es para arriba y abajo y 2 rem para los lados*/
+    text-decoration: none;/*quitar estilo por defecto de los enlaces*/
+}
+
+@media(max-width:960px){
+    .content{
+        padding: 0 3rem;
+    }
+}
